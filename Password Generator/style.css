@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: darkcyan;
+  overflow-x: hidden;
+  height: auto;
+  overflow-y: hidden;
+  font-family: "Sour Gummy", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1{
+    margin-top: 30px;
+    font-size: 36px;
+}
+#main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-family: "Ultra", serif;
+}
+button{
+  padding: 10px;
+  border-radius: 5px;
+  border: transparent;
+  outline: transparent;
+  font-family: "Sour Gummy", serif;
+  font-weight: 700;
+}
+#heading{
+  background-color: rgb(17, 0, 0);
+  color:chartreuse;
+  width:auto;
+  padding: 5px;
+  letter-spacing: 3px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+    text-align: center;
+  }
+
+  #heading {
+    text-align: center;
+    font-size: 14px; /* Improved readability */
+    max-width: 100%; /* Ensures it stays inside */
+    padding: 5px;
+    overflow-wrap: break-word;
+  }
+
+  #main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 90%; /* Adjusted for better fit */
+    margin: auto;
+    word-wrap: break-word; /* Ensures text stays inside */
+    overflow: hidden; /* Prevents overflow */
+  }
+}
